@@ -30,7 +30,7 @@ export class AppComponent {
       .get(this.url + '/new/shuffle')
       .subscribe((res: any) => {
         this.deck = res['deck_id'];
-        console.log(this.deck);
+        //console.log(this.deck);
       });
 
     }
@@ -44,7 +44,7 @@ export class AppComponent {
       .subscribe((res: any) => {
          this.cards = res['cards'][0];
          this.cardsoutside = res;
-         console.log(res['deck_id']);
+         //console.log(res['deck_id']);
 
       });
 
