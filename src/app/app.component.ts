@@ -30,6 +30,7 @@ export class AppComponent {
       .get(this.url + '/new/shuffle')
       .subscribe((res: any) => {
         this.deck = res['deck_id'];
+        this.getCard();
         //console.log(this.deck);
       });
 
